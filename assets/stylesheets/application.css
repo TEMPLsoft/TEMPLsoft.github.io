@@ -1,0 +1,38 @@
+.container
+{
+  max-width: 800px;
+}
+
+i.icon-envelope,
+i.icon-phone,
+i.icon-skype
+{
+  margin-right: 5px;
+}
+
+header
+{
+  text-align: center;
+  padding: 100px 0;
+}
+
+header .btn
+{
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+header .other
+{
+  margin-top: 20px;
+}
+
+header .other .lead
+{
+  margin-bottom: 10px;
+}
+
+header h1
+{
+  font-size: 100px;
+}
