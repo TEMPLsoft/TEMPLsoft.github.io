@@ -1,38 +1,256 @@
-.container
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
 {
-  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+	-webkit-text-stroke: 0.2px;
 }
 
-i.icon-envelope,
-i.icon-phone,
-i.icon-skype
+body
 {
-  margin-right: 5px;
+  line-height: 1;
 }
 
-header
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
 {
-  text-align: center;
-  padding: 100px 0;
+  display: block;
 }
 
-header .btn
+nav ul
 {
-  font-size: 21px;
-  padding: 14px 24px;
+  list-style: none;
 }
 
-header .other
+blockquote, q
 {
-  margin-top: 20px;
+  quotes: none;
 }
 
-header .other .lead
+blockquote:before, blockquote:after,
+q:before, q:after
 {
-  margin-bottom: 10px;
+  content: '';
+  content: none;
 }
 
-header h1
+a
 {
-  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins
+{
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark
+{
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del
+{
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title]
+{
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr
+{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select
+{
+  vertical-align: middle;
+}
+/* end reset */
+
+::selection
+{
+  background: #C74DC7;
+  color: #fff;
+}
+
+::-moz-selection
+{
+  background: #C74DC7;
+  color: #fff;
+}
+
+body
+{
+	background: url(/assets/images/wall.png);
+  font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+  color: #3a3a3a;
+}
+
+#brand
+{
+	width: 250px;
+	margin: 0 auto;
+	padding: 0 5%;
+	margin-top: -10px;
+	padding-bottom: 50px;
+}
+
+#text
+{
+	width: 500px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid #ebebeb;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+h1
+{
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 170%;
+	text-align: left;
+}
+
+p
+{
+	font-size: 1em;
+	line-height: 170%;
+	text-align: left;
+}
+
+.bold
+{
+	font-weight: 300;
+}
+
+.color
+{
+	color: #C74DC7;
+}
+
+.button
+{
+	max-width: 160px;
+	background: #C74DC7;
+	border-radius: 2px;
+	border-bottom: 3px solid #A32CA3;
+	margin-top: 30px;
+	color: #fff;
+	padding: 15px 18px;
+	text-align: center;
+}
+
+.button a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.button:hover
+{
+	background: #A32CA3;
+}
+
+.contact
+{
+	font-weight: 600;
+	float: right;
+	margin-top: -50px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+
+#text
+{
+	font-size: 0.88em;
+	width: 80%;
+	padding: 20px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+p, h1
+{
+	padding-right: 8%;
+}
+
+.button
+{
+	height: 12px;
+	min-width: 85%;
+}
+
+.contact
+{
+	margin-top: 30px;
+	font-weight: 600;
+	float: none;
+}
+
+.contact p
+{
+	text-align: center;
+}
+
+#brand img
+{
+	width: 85%;
+	margin-left: 3%;
+}
 }
