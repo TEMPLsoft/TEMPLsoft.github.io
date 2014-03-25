@@ -625,10 +625,8 @@ z-index:999;
 min-height:300px;
 padding:7% 15%;
 margin:0 auto;
-}
-
-.work.even {
-  background: #ffffff;
+background: #ffffff;
+border-bottom: 1px solid #f5f5f5;
 }
 
 .work .container{
