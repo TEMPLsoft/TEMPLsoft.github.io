@@ -12,7 +12,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic" rel="stylesheet" type="text/css">
 
     <link href="/assets/stylesheets/jquery.bxslider.css" rel="stylesheet" />
     <link href="/assets/stylesheets/application.css" rel="stylesheet" />
@@ -35,11 +35,19 @@
           ga('send', 'pageview');
     </script>
 
-		<script type="text/javascript">
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+    $.src='//v2.zopim.com/?2BekBXvwHrj8iqG75Hc6gHrAhLw7S2pk';z.t=+new Date;$.
+    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+
+    <script type="text/javascript">
     $(document).on('ready', function() {
       $('.bxslider').bxSlider();
-		});
-		</script>
+    });
+    </script>
   </head>
   <body>
     {{ content }}
