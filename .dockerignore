@@ -1,3 +1,4 @@
 .bundle/*
+.git
 .jekyll-cache/
 _site/*
